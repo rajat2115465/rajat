@@ -13,7 +13,7 @@ app.use(Cook(""));
 // app.use(cors());
 app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
 app.use(router);
-const port=process.end.port || 8005;
+const port=process.env.port || 8005;
 app.listen(port,()=>{
     console.log(`server is running on port number ${port}`);
 });
